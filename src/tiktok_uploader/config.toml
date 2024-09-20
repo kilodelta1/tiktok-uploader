@@ -42,7 +42,7 @@ user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 	upload_video = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div/input"
 	upload_finished = "//div[contains(@class, 'btn-cancel')]"
  	upload_confirmation = "//div[@title]"
- 	process_confirmation = "//div[contains(@class, 'cover-selector-image-container')]/img[contains(@class, 'cover-selector-image')]"
+ 	process_confirmation = "//div[contains(@class, 'info-status-item success-info')]/img[contains(@alt, 'Uploaded')]"
 	description = "//div[@contenteditable='true']"
 
 	visibility = "//div[@class='tiktok-select-selector']"
@@ -55,8 +55,8 @@ user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 	duet = "//label[.='Duet']/following-sibling::div/input"
 	stitch = "//label[.='Stitch']/following-sibling::div/input"
 	
-	post = "//*[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[4]/div/div[2]/div[8]/button[1]"
-	post_confirmation = "/html/body/div[8]/div/div/div[3]/button[2]/div"
+	post = "//div[contains(@class, 'TUXButton-label') and .//text()='Post']"
+	post_confirmation = "//div[contains(@class, 'TUXModal common-modal') and .//text()='Your video has been uploaded']"
 
 	[selectors.schedule]
 	switch = "//*[@id='tux-3']"
